@@ -5,26 +5,30 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class _Default : System.Web.UI.Page
+public partial class FanLogin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
-    protected void LoginButton_Click(object sender, EventArgs e)
+
+    protected void FanLoginButton_Click(object sender, EventArgs e)
     {
-        VenueLogin();
+        LoginFan();
     }
-    protected void VenueLogin()
+    protected void LoginFan()
     {
         LoginServiceReference.ShowTrackerLoginServiceClient lsr =
             new LoginServiceReference.ShowTrackerLoginServiceClient();
-        int key = lsr.VenueLogin(PasswordTextBox.Text, UserNameTextBox.Text);
+        int key = lsr.FanLogin(FanPasswordTextBox.Text, FanUserNameTextBox.Text);
         if (key != -1)
         {
-            
+
             Session["userKey"] = key;
-            Response.Redirect("AddShow.aspx");
+            Response.Redirect("ViewShows.aspx");
+
+
+            ErrorLabel.Text = "Succesfully registration";
         }
         else
         {

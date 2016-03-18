@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <h1>Venue Registration</h1>
     <table>
         <tr>
             <td>Venue Name</td>
@@ -118,6 +119,7 @@
         </tr>
     </table>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AddShow.aspx">Add Show</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Back Login</asp:HyperLink>
     </div>
     </form>
 </body>
