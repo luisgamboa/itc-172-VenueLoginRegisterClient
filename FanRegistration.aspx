@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h1>Fan Registration</h1>
     <form id="form1" runat="server">
     <div>
-        <h1>Fan Registration</h1>
-    <table>
+        <table>
         <tr>
             <td>Fan Name</td>
             <td><asp:TextBox ID="FanNameTextBox" runat="server"></asp:TextBox></td>
@@ -53,6 +54,7 @@
             </td>
         </tr>
         <tr>
+            <td></td>
             <td>
                 <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
             </td>

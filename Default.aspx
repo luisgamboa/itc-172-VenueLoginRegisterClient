@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Fan Login</title>
+
+    <title>Venue Login</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <h1>Venue Login</h1>
@@ -26,6 +28,7 @@
         </tr>
 
         <tr>
+            <td></td>
             <td>
                 <asp:Button ID="LoginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
             </td>
@@ -36,11 +39,14 @@
 
         </tr>
         </table>
-     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/VenueRegistration.aspx">Registration</asp:HyperLink>
-     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/HomePage.aspx">Back Home Page</asp:HyperLink>
+     
 
     
     </div>
     </form>
+    <div>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/VenueRegistration.aspx">Registration    |   </asp:HyperLink>
+     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/HomePage.aspx"> Back Home Page</asp:HyperLink>
+     </div>
 </body>
 </html>

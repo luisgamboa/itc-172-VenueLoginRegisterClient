@@ -1,0 +1,63 @@
+﻿
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+
+h1{
+    color: #0094ff;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+form {
+    border: white 1px;
+   background:  rgba(255, 216, 0, 0.33);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+
+    color: white;
+
+}
+
+td{
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    background: white;
+    border: #FFD800 1px solid;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #FFB0AB;
+    float: right;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="checkbox"] {
+    border: #ffd800 1px solid;
+    width: 15em;
+
+}
+
+#ArtistDropDownList, #ShowsDropDownList {
+        border: #ffd800 1px solid;
+    width: 15em;
+}
+
+#ShowDateCalendar {
+    border: #ffd800 1px solid;
+    padding: 5px;
+    background: white;
+}
+
+#HyperLink1, #HyperLink2, #HyperLink3  {
+    color: #ff0000;
+}
+
+#ErrorLabel {
+     color: #ff0000;
+}

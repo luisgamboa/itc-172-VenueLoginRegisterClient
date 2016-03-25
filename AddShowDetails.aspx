@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <title>Add Show Details</title>
+     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
       <h1>Add Show Details</h1>
@@ -48,6 +49,7 @@
                 </td>
             </tr>
             <tr>
+                <td></td>
                 <td>
                     <asp:Button ID="SaveShowDetailsButton" runat="server" Text="Save Show Details" OnClick="SaveShowDetailsButton_Click"/>
                 </td>
@@ -58,5 +60,6 @@
                 </table>
     </div>
     </form>
+     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/HomePage.aspx">Back Home Page</asp:HyperLink>
 </body>
 </html>
